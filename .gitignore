@@ -1,0 +1,18 @@
+# Node.js / Backend
+node_modules/
+.env
+config.env
+
+# React or Frontend build
+Frontend/build/
+Frontend/dist/
+
+# Logs
+*.log
+
+# IDE / Editor settings
+.vscode/
+.DS_Store
+
+# OS files
+Thumbs.db
