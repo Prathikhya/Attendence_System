@@ -3,9 +3,17 @@ const sequelize = require('../config/db');
 const User = require('./user.model');
 
 const Attendance = sequelize.define('Attendance', {
-  date: DataTypes.DATEONLY,
-  checkIn: DataTypes.TIME,
-  checkOut: DataTypes.TIME,
+  date: {
+    type: DataTypes.DATEONLY,
+    defaultValue: DataTypes.NOW,
+  },
+  checkIn: {
+    type: DataTypes.TIME,
+
+  },
+  checkOut: {
+    type: DataTypes.TIME,
+  },
 });
 
 User.hasMany(Attendance);
